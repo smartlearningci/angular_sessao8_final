@@ -1,0 +1,8 @@
+<div *ngIf="logService.msgs.length" class="alert alert-success" role="alert">
+
+    <h2>Alertas</h2>
+    <button type="button" class="clear"
+            (click)="logService.limpar()">Limpar mensagens</button>
+    <div *ngFor='let msg of logService.msgs'> {{msg}} </div>
+  
+</div>
